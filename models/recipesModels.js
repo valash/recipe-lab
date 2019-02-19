@@ -4,14 +4,13 @@ const Schema = mongoose.Schema;
 const Recipe = new Schema({
   Title: String,
   Instructions: String,
-  whenCreated: {
-    default: Date.now()
-  },
   author: {
     type: Schema.Types.ObjectId,
     ref: "User"
+  },
+  whenCreated: {
+    default: Date.now()
   }
 });
 
-// export
-module.exports;
+module.exports = mongoose.model("Recipe", Recipe);
