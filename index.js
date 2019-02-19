@@ -4,6 +4,10 @@ const app = express();
 //this is for authentication!!! (Bonus 1)
 // const passport = require("passport");
 
+app.use(function (req, res) {
+    res.status(404).render('error');
+});
+
 app.listen(3000, () => {
   console.log("listening on THE PORT YALL");
 });
