@@ -9,7 +9,7 @@ const routeController = require("../controllers/recipe");
 //delete a recipe --> ?_methodOverride
 router.post("/", recipesControllers.create);
 router.get("/recipe/new", recipesControllers.new);
-router.get("/:id", recipesControllers.show);
-router.put("/:id", recipesControllers.update);
+router.get("/:recipe", recipesControllers.show);
+router.put("/:recipe", recipesControllers.update);
 
 module.exports = router;
