@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var mongoDB = ('mongod://localhost/recipes')
+var mongoDB = ('mongodb://localhost/recipes')
 
 mongoose.Promise = Promise
 
