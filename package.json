@@ -19,6 +19,7 @@
   "homepage": "https://github.com/valash/recipe-lab#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "node": "^11.10.0"
+    "node": "^11.10.0",
+    "passport-local": "^1.0.0"
   }
 }
