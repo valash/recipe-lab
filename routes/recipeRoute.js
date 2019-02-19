@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-const express = require('express')
-const router = express.Router()
-const recipe
-=======
 const express = require("express");
 const router = express.Router();
 const routeController = require("../controllers/recipe");
@@ -14,8 +9,7 @@ const routeController = require("../controllers/recipe");
 //delete a recipe --> ?_methodOverride
 router.post("/", recipesControllers.create);
 router.get("/recipe/new", recipesControllers.new);
-router.get("/:id", recipesControllers.show);
-router.put("/:id", recipesControllers.update);
+router.get("/:recipe", recipesControllers.show);
+router.put("/:recipe", recipesControllers.update);
 
 module.exports = router;
->>>>>>> 33d6352c0d96be33679f2b392af17765db554297
