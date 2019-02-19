@@ -7,6 +7,6 @@ module.exports = {
 },
 
 new: (req, res) => {
-    res.render('/recipesViews/createRecipe,')
+    res.render('/createRecipe,')
     console.log("new recipe form")
 }
