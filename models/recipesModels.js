@@ -6,6 +6,5 @@ const Recipe = new Schema = ({
     author: {
         type: Schema.Types.ObjectId,
         ref: "User"
-    }
-
+    } 
 })
