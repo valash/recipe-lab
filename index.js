@@ -6,10 +6,7 @@ const app = express();
 
 
 app.use(require("./routes/userRoute"));
-=======
-app.use(function (req, res) {
-    res.status(404).render('error');
-});
+
 
 
 app.listen(3000, () => {
