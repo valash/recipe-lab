@@ -5,6 +5,7 @@ const app = express();
 // const passport = require("passport");
 
 app.use(require("./routes/userRoute"));
+app.set("view engine", "hbs");
 
 app.use(function(req, res) {
   res.status(404).render("error");
